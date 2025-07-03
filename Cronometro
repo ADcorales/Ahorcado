@@ -1,0 +1,17 @@
+import time
+
+tiempo_inicial = time.time()
+
+duracion_temporizador = 20
+
+tiempo_final = tiempo_inicial + duracion_temporizador
+
+while time.time() <= tiempo_final:
+
+    tiempo_restante = int(tiempo_final - time.time())
+
+    print("tiempo restante:", tiempo_restante, "segundo")
+
+    time.sleep(1)
+  
+print ("Felicidades animal,haz muerto")
